@@ -87,7 +87,7 @@ section{
     top: 50px;
     left: -100px;
     color: rgb(207, 207, 207);
-    font-size: 18vw;
+    font-size: 10vw;
     z-index: -1;
 }
 .about p{
@@ -130,6 +130,7 @@ section{
     }
     .example{
         flex-direction: column;
+        justify-content: center;
     }
     .image, .text{
         width: 80vw;
