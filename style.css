@@ -1,0 +1,145 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+a, a:visited{
+    text-decoration: none;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 35px;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 25px;
+}
+h5{
+    font-size: 20px;
+}
+p{
+    font-size: 20px;
+}
+body{
+    margin: 0;
+    box-sizing:border-box;
+}
+.container{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+section{
+    scroll-snap-align: start;
+}
+.main-page{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-inline: 10px;
+}
+.main-page h1{
+    font-size: 70px;
+    font-family: 'Aboreto', cursive;
+}
+.main-page h2{
+    font-size: 50px;
+}
+
+.social{
+    scroll-snap-align: end;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+.social div:hover{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.social-link{
+    margin-top: 40px;
+    width: 20vw;
+    height: 11vw;
+}
+.about{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    background-position: bottom;
+}
+.about-bg{
+    position: absolute;
+    top: 50px;
+    left: -100px;
+    color: rgb(207, 207, 207);
+    font-size: 18vw;
+    z-index: -1;
+}
+.about p{
+    font-size: 40px;
+    text-align: center;
+}
+.transition{
+    height: 200px;
+    width: 100%;
+    background-image: url('./transition1.png');
+    background-size: cover;
+}
+.example{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.image, .text{
+    width: 40vw;
+}
+.one{
+    background-color: #222;
+    color: white;
+}
+.one h1{
+    font-family: 'Cormorant SC', serif;
+    color: #cc8a27;
+}
+
+@media only screen and (max-width: 650px){
+    .main-page h1{
+        font-size: 10vw;
+    }
+    .main-page h2{
+        font-size: 7vw;
+    }
+    .about p{
+        font-size: 5vw;
+    }
+    .example{
+        flex-direction: column;
+    }
+    .image, .text{
+        width: 80vw;
+    }
+}
+@media only screen and (max-width: 599px){
+    section{
+        scroll-snap-align: none;
+    }
+    .social{
+        scroll-snap-align: none;
+    }
+}
