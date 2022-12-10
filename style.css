@@ -32,6 +32,9 @@ body{
     scroll-snap-type: y mandatory;
     height: 100vh;
 }
+scroll{
+    transition:0.5s;
+}
 section{
     scroll-snap-align: start;
 }
